@@ -11,5 +11,4 @@ Starting with just an empty list, write a function that creates a grocery list t
 • Remove an Item (takes a string input from the user and removes all instances from the list)
 • Print entire list (prints out all the contents of the list)
 • Exit (exit the program)
-
 '''
