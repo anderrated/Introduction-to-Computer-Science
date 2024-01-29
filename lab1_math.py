@@ -1,6 +1,7 @@
-# Author: Andrea Laserna
-# Date of Creation: 2022
-# This laboratory exercise will utilize the math module
+# Author : Andrea Laserna
+# Created on September, 2022
+# Modified on January 29, 2024
+
 import math
 
 # EXERCISE 1 - The Python Math Module
