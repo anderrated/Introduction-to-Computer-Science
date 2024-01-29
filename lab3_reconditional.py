@@ -19,32 +19,32 @@ print("=== A SHORT DESCRIPTION OF '" + str(n) + "' ===")
 # Odd or Even
 
 if (n % 2 == 0):
-    print("'" + str(n) + "' is EVEN.")
+    print(f"'{n}' is EVEN.")
 else:
-    print("'" + str(n) + "' is ODD.")
+    print(f"'{n}' is ODD.")
 
 # Positive, Negative, Neither
 
 if (n > 0):
-    print("'" + str(n) + "' is POSITIVE.")
+    print(f"'{n}' is POSITIVE.")
 elif (n < 0):
-    print("'" + str(n) + "' is NEGATIVE.")
+    print(f"'{n}' is NEGATIVE.")
 else:
-    print("'" + str(n) + "' is NEITHER POSITIVE NOR NEGATIVE.")
+    print(f"'{n}' is NEITHER POSITIVE NOR NEGATIVE.")
 
 # Divisible by 3
 
 if (n == 0):
-    print("'" + str(n) + "' is NOT DIVISIBLE BY 3.")
+    print(f"'{n}' is NOT DIVISIBLE BY 3.")
 elif (n % 3 == 0):
-    print("'" + str(n) + "' is DIVISIBLE BY 3.")
+    print(f"'{n}' is DIVISIBLE BY 3.")
 else:
-    print("'" + str(n) + "' is NOT DIVISIBLE BY 3.")
+    print(f"'{n}' is NOT DIVISIBLE BY 3.")
 
 # Absolute Value
 
 if (abs(n) >= 50 and abs(n) <= 99):
-    print("'" + str(n) + "' is IN BETWEEN 50 AND 99 INCLUSIVE.")
+    print(f"'{n}' is IN BETWEEN 50 AND 99 INCLUSIVE.")
 else:
-    print("'" + str(n) + "' is NOT IN BETWEEN 50 AND 99 INCLUSIVE.")
+    print(f"'{n}' is NOT IN BETWEEN 50 AND 99 INCLUSIVE.")
 

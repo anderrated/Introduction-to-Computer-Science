@@ -49,8 +49,8 @@ strawberry = 5
 vanilla = 20
 
 print(chocolate, strawberry, vanilla)
-print(str(chocolate) + " and " + str(vanilla))
-print("There are " + str(chocolate) + " chocolate, " + str(strawberry) + " strawberry and " + str(vanilla) + " vanilla ice cream.")
+print(f"{chocolate} and {vanilla}")
+print(f"There are {chocolate} chocolate, {strawberry}strawberry and {vanilla} vanilla ice cream.")
 print("The total number of ice cream is", chocolate + strawberry + vanilla)
 
 # EXERCISE 4 - Math expressions
@@ -85,7 +85,7 @@ radius 7 and height 13?
 r = 7
 h = 13
 volume = 1 / 3 * math.pi * math.pow(r, 2)
-print("The volume is " + str("%.2f" % volume))
+print(f"The volume is {volume:.2f}")
 
 '''
 Suppose the cover price of Taylor Swift’s new and exclusive “Folklore” album is $11.99, but
@@ -99,4 +99,4 @@ additional_copy = 0.85
 copies = 125
 
 total_cost = copies * (price - (price *discount)) + shipping_cost + (additional_copy * 124)
-print("The total cost is " + str("%.2f" % total_cost))
+print(f"The total cost is {total_cost:.2f}")
