@@ -41,3 +41,5 @@ print(myGWA == laude)
 print((myGWA >= laude) and (myGWA < summa))
 print((myGWA > magna) or (myGWA <= laude))
 print(5 * 0.15 == 0.75)
+
+# EXERICSE 3
