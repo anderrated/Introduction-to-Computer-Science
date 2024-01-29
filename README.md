@@ -1,7 +1,8 @@
 # Introduction-to-Computer-Science
-CMSC 11 Laboratory Assignments
+My 2022 CMSC 11 Laboratory Assignments
+Updated on 2024
 
 ### Student: Andrea Laserna
-### YEAR 1 BS in Computer Science
+### Year: 1
 ### Language: Python
 ### Instructor: Jayvee Castaneda
