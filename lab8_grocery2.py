@@ -1,6 +1,6 @@
 # Author : Andrea Laserna
 # Created on December 13, 2022
-# Modified on January 29, 2024
+# Modified on January 31, 2024
 
 '''
 The mother loves the Grocery List program you created last time. Now she wants to make little 
