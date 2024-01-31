@@ -20,16 +20,23 @@ def main():
     grocery_list = {}
     run = True
     print("    GROCERY LIST    ")
-    print("====================")
 
     while run:
+        print("====================\n")
         print("What would you like to do?")
         print("1. Add an item")
         print("2. Remove an item")
         print("3. Print entire list")
         print("4. Calculate cost")
         print("5. Exit\n")
+
         choice = input("Choice (1-4): ")
+        try:
+            int(choice)
+        except ValueError:
+            print("You can only choose from 1-4. Please try again.")
+            continue
+        
         print("====================")
 
         if choice == "1":
@@ -46,6 +53,23 @@ def main():
         else:
             print("Invalid input. Please try again.")
 
+def ask_price():
+    while True:
+        try:
+            price = float(input("Price: "))
+            break
+        except:
+            print("Price must be a number. Try Again\n")
+    return price
+
+def ask_quantity():
+    while True:
+        try:
+            quantity = int(input("Quantity: "))
+            break
+        except:
+            print("Quantity must be a number. Try Again\n")
+    return quantity
 
 def add_item(grocery_list):
     print("ADD AN ITEM...")
@@ -54,15 +78,16 @@ def add_item(grocery_list):
 
     for item, (price, quantity) in list(grocery_list.items()):
         if item_to_add.lower() == item.lower():
-            print("Item already exists. Try Again")
+            print("Item already exists. Try Again\n")
             add_item(grocery_list)
             return
 
-    price = float(input("Price: "))
-    quantity = int(input("Quantity: "))
+    price = ask_price()
+    quantity = ask_quantity()
+
     grocery_list[item_to_add] = (price, quantity)
 
-    print("====================\n")
+    
 
 def remove_item(grocery_list):
     print("REMOVE AN ITEM...")
@@ -73,13 +98,23 @@ def remove_item(grocery_list):
             grocery_list.pop(item)
             return
         else:
-            print("Item not found.")
-    print("====================\n")
+            print("Item not found.\n")
 
 def print_list(grocery_list):
     print("PRINTING LIST...\n")
+    print(f'{"ITEM": <11} {"PRICE": <11} {"QUANTITY"}\n')
+
     for item, (price, quantity) in grocery_list.items():
-        print(f"{item: <11} {price: <11} {quantity}")
-    print("====================\n")
+        print(f"{item: <12} {price: <12} {quantity}")
+
+def calculate(grocery_list):
+    print("CALCULATING COST...\n")
+    total = 0
+    print_list(grocery_list)
+
+    for item, (price, quantity) in grocery_list.items():
+        total += price * quantity
+
+    print(f"\nTotal cost: ${total}")
 
 main()
