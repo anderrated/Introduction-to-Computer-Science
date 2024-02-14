@@ -29,7 +29,7 @@ def main():
     #print(sorted_list)
 
     index = binary_search(sorted_list, code, start_index = 0, end_index = len(sorted_list) - 1)
-    
+
     if (index!= False):
         print(f"Item found at index {index}.")
     else:
